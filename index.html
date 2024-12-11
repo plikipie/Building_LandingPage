@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Product Landing Page Submission</title>
+  </head>
+  <body>
+    <header id="header">
+      <img src="/img/logo-aurorian.png" alt="Logo Product" id="header-img" />
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#hero" target="_blank" id="nav-home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#about" target="_blank" id="nav-about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-link"
+              href="#product"
+              target="_blank"
+              id="nav-keyProjects"
+              >Product</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="hero">
+      <div class="container-hero">
+        <div class="headiline">
+          <h1 class="headline">Grow your Bussiness with Aurorian</h1>
+          <p class="tagline">
+            A simple platform to streamline your workflow and increase
+            productivity.
+          </p>
+        </div>
+        <div class="hero-img">
+          <img src="/img/hero-aurorian430.png" alt="Hero aurorian" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="aboutUs">
+        <h1>About Us - <strong>Aurorian</strong></h1>
+      </div>
+      <sidebar>
+        <iframe
+          id="video"
+          width="600"
+          height="400"
+          src="https://www.youtube.com/embed/DmfW5htOc7w"
+          title="Best of Pudgy Penguins 2023"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </sidebar>
+      <sidebar>
+        <p>
+          "Streamline Your Workflow. Amplify Your Productivity. Achieve Your
+          Goals."
+        </p>
+        <p>
+          <em>At Grow Your Business with Aurorian </em>, we understand that
+          running a productive business requires flexibility, efficiency, and
+          the right tools. That’s why we’re here — to simplify your processes
+          and empower your growth with a streamlined platform designed to
+          optimize your workflow and boost your team’s productivity.
+        </p>
+      </sidebar>
+    </section>
+    <section id="product">
+      <h1>Your All-in-One Productivity Solution.</h1>
+      <p>
+        "Simplify your workflow, collaborate effortlessly, and achieve your
+        goals with Aurorian."
+      </p>
+      <div class="card-container">
+        <div class="card">
+          <img src="" alt="Product1" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Product 1</h3>
+            <p class="card-description">
+              Streamline your workflow with this tool.
+            </p>
+            <button class="card-button">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="Product1" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Product 2</h3>
+            <p class="card-description">
+              Boost team productivity like never before.
+            </p>
+            <button class="card-button">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="" alt="Product1" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Product 3</h3>
+            <p class="card-description">
+              Streamline your workflow with this tool.
+            </p>
+            <button class="card-button">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="POST"
+        class="subscription-form"
+      >
+        <h3>Stay Updated!</h3>
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Input your email"
+          required
+        />
+        <input type="submit" id="submit" value="Subscribe" />
+      </form>
+    </section>
+  </body>
+</html>
