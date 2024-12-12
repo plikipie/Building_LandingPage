@@ -1,37 +1,68 @@
-body {
-  background-image: url("img/bg-hero-aurorian.png");
-  width: 100%;
-  height: 1000pxpx;
-  background-size: cover;
-  background-repeat: no-repeat;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/bg-hero-aurorian.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
 }
 html {
   scroll-behavior: smooth;
 }
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
-.hero-img img {
+
+#header {
   width: 100%;
-  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(21, 11, 16);
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  font-weight: bold;
+}
+header > h1 {
+  margin-right: auto;
   padding: 20px;
 }
-.headline {
-  font-family: sans-serif;
-  font-size: 80px;
-  text-align: left;
-  color: white;
+#header img {
+  width: 8%;
+  height: auto;
+  object-fit: cover;
 }
-.tagline {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 30px;
-  margin: 10px 0;
+#nav-bar {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+nav#navbar {
+  display: flex;
+  margin-left: auto;
+}
+nav#nav-bar ul {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+  list-style: none;
+}
+
+nav#nav-bar li a {
+  text-decoration: none;
   color: white;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+nav#nav-bar li a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
